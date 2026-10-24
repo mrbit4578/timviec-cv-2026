@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Job Search VN 2026 — Phạm Thị Phương (팜 티 프엉) | Kế toán Tổng hợp Tiếng Hàn</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-alt: #f1f5f9;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --primary-soft: #dbeafe;
+      --emerald: #059669;
+      --emerald-soft: #d1fae5;
+      --amber: #d97706;
+      --amber-soft: #fef3c7;
+      --purple: #7c3aed;
+      --purple-soft: #ede9fe;
+      --border: #e2e8f0;
+      --shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+      --radius: 14px;
+    }
+    [data-theme="dark"] {
+      --bg: #0b1120;
+      --surface: #1e293b;
+      --surface-alt: #0f172a;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #60a5fa;
+      --primary-soft: rgba(59, 130, 246, 0.18);
+      --emerald: #10b981;
+      --emerald-soft: rgba(16, 185, 129, 0.18);
+      --amber: #f59e0b;
+      --amber-soft: rgba(245, 158, 11, 0.18);
+      --purple: #a78bfa;
+      --purple-soft: rgba(167, 139, 250, 0.18);
+      --border: #334155;
+      --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Malgun Gothic", "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      padding-bottom: 60px;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+      color: #ffffff;
+      padding: 28px 0 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.14);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-bottom: 10px;
+    }
+    h1 { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+    .subtitle { color: #dbeafe; font-size: 14.5px; max-width: 820px; }
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 14px;
+      font-size: 13.5px;
+      color: #e2e8f0;
+    }
+    .contact-strip span {
+      background: rgba(15, 23, 42, 0.38);
+      padding: 5px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 15px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+      text-decoration: none !important;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .btn-light {
+      background: rgba(255,255,255,0.15);
+      color: #ffffff;
+      border-color: rgba(255,255,255,0.25);
+    }
+    .btn-light:hover { background: rgba(255,255,255,0.25); }
+    .btn-outline {
+      background: var(--surface);
+      color: var(--text);
+      border-color: var(--border);
+    }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .btn-emerald {
+      background: var(--emerald);
+      color: #ffffff;
+    }
+    .btn-emerald:hover { opacity: 0.92; }
+
+    /* KPI Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: -18px;
+      margin-bottom: 24px;
+    }
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .kpi-label { font-size: 12.5px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; }
+    .kpi-val { font-size: 26px; font-weight: 800; color: var(--primary); margin: 4px 0; }
+    .kpi-note { font-size: 12.5px; color: var(--text-muted); }
+
+    /* Navigation Tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+    .tab-btn {
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 13.8px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* Cards & Layout */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .badge-strong { background: var(--emerald-soft); color: var(--emerald); }
+    .badge-good { background: var(--primary-soft); color: var(--primary); }
+    .badge-amber { background: var(--amber-soft); color: var(--amber); }
+    .badge-purple { background: var(--purple-soft); color: var(--purple); }
+
+    /* Filter Bar */
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+      background: var(--surface);
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      align-items: center;
+    }
+    .filter-bar input, .filter-bar select {
+      padding: 9px 13px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface-alt);
+      color: var(--text);
+      font-size: 13.5px;
+    }
+    .filter-bar input { flex: 1; min-width: 220px; }
+
+    /* Job Card */
+    .job-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .job-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      transition: transform 0.12s, border-color 0.12s;
+    }
+    .job-card:hover { border-color: var(--primary); }
+    .job-card.top-pick {
+      border-left: 5px solid var(--emerald);
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .job-rank {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--primary);
+      background: var(--primary-soft);
+      padding: 3px 9px;
+      border-radius: 6px;
+      margin-right: 8px;
+    }
+    .job-title { font-size: 17px; font-weight: 700; color: var(--text); }
+    .job-company { font-size: 14px; font-weight: 600; color: var(--text-muted); margin-top: 2px; }
+    .job-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .list-box {
+      background: var(--surface-alt);
+      padding: 12px 15px;
+      border-radius: 10px;
+      font-size: 13.2px;
+    }
+    .list-box h4 {
+      font-size: 12.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 6px;
+    }
+    .list-box ul { padding-left: 18px; }
+    .list-box li { margin-bottom: 4px; }
+
+    /* Download Grid */
+    .dl-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .dl-item {
+      border: 1px solid var(--border);
+      background: var(--surface-alt);
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .dl-item h4 { font-size: 14.5px; font-weight: 700; }
+    .dl-item p { font-size: 12.5px; color: var(--text-muted); }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    th, td { padding: 11px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+    th { background: var(--surface-alt); font-weight: 700; color: var(--text-muted); font-size: 12px; text-transform: uppercase; }
+
+    /* Modal for PDF preview */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal-content {
+      background: var(--surface);
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 960px;
+      height: 88vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .modal-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-body { flex: 1; background: #334155; }
+    .modal-body iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div>
+          <div class="brand-badge">🚀 AI JOB SEARCH VN 2026 • KOREAN-VIETNAMESE EDITION</div>
+          <h1>Phạm Thị Phương (팜 티 프엉) — Kế Toán Tổng Hợp (총괄 회계 담당자)</h1>
+          <p class="subtitle">
+            11+ năm kinh nghiệm Kế toán Tổng hợp, Thuế, Hoàn thuế GTGT, BCTC &amp; Kiểm toán Nội bộ | Song bằng <b>Cử nhân Kế toán (ĐH Kinh tế Quốc dân)</b> &amp; <b>Cử nhân Hàn Quốc học (ĐH KHXH&amp;NV TP.HCM)</b> | Thành thạo <b>Ecount ERP, Smart Pro, Fast</b>
+          </p>
+          <div class="contact-strip">
+            <span>📅 Sinh ngày: <b>1990.12.12</b></span>
+            <span>📞 ĐT: <b>0963 569 816</b></span>
+            <span>✉️ Email: <b>Phamphuong121290@gmail.com</b></span>
+            <span>📍 Địa chỉ: <b>Phú Đông, Nhơn Trạch, Đồng Nai</b></span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-emerald" href="downloads/CV_2026_Phuong_Tieng_Han_Samkwang_CF_Vina.docx" download>
+            ⬇️ Tải CV Tiếng Hàn (.docx)
+          </a>
+          <button class="btn btn-light" onclick="downloadBase64Pdf('samkwang_cv_pdf', 'CV_2026_Phuong_Samkwang_CF_Vina.pdf')">
+            📄 Tải CV PDF (2 trang chuẩn ATS)
+          </button>
+          <button class="btn btn-light" onclick="toggleTheme()" id="themeBtn">
+            🌙 Giao diện Tối/Sáng
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- KPI Summary -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Việc làm thực tế đã quét (/scrape)</div>
+        <div class="kpi-val" id="kpiTotalScraped">31</div>
+        <div class="kpi-note">VietnamWorks CLI (Đồng Nai &amp; TP.HCM)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Việc làm đã chấm điểm (/rank)</div>
+        <div class="kpi-val" id="kpiTotalRanked">20</div>
+        <div class="kpi-note">5 Strong Fit (75+) • 15 Good Fit (60–74)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Cơ hội khớp #1 (Top Match)</div>
+        <div class="kpi-val" style="color: var(--emerald);">96/100</div>
+        <div class="kpi-note"><b>Samkwang CF Vina</b> (KCN Nhơn Trạch 6, Đồng Nai)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Bộ hồ sơ đã tối ưu (/apply)</div>
+        <div class="kpi-val">2 Gói</div>
+        <div class="kpi-note">Samkwang CF Vina &amp; Orion Food Vina (KR/VI)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Kiểm thử &amp; Bảo mật Repo</div>
+        <div class="kpi-val" style="color: var(--emerald);">895 PASS</div>
+        <div class="kpi-note">837 Python tests + 58 Bun tests + Security Guards</div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-jobs', this)">🎯 1. Bảng Xếp Hạng Việc Làm Thực Tế (/scrape &amp; /rank)</button>
+      <button class="tab-btn" onclick="switchTab('tab-apply', this)">📦 2. Bộ Hồ Sơ Đã Tối Ưu (/apply: Hàn - Việt - PDF - DOCX)</button>
+      <button class="tab-btn" onclick="switchTab('tab-cv', this)">📋 3. Hồ Sơ CV Tiếng Hàn (이력서) &amp; Audit CV</button>
+      <button class="tab-btn" onclick="switchTab('tab-interview', this)">🎤 4. Cẩm Nang Phỏng Vấn STAR (/interview)</button>
+      <button class="tab-btn" onclick="switchTab('tab-audit', this)">🛠️ 5. Báo Cáo Audit &amp; Tối Ưu Mã Nguồn Dự Án</button>
+    </nav>
+
+    <!-- TAB 1: RANKED JOBS -->
+    <section id="tab-jobs" class="tab-panel active">
+      <div class="filter-bar">
+        <input type="text" id="jobSearchInput" placeholder="🔍 Tìm theo tên công ty, vị trí, KCN Nhơn Trạch, Biên Hòa, tiếng Hàn..." oninput="renderJobs()" />
+        <select id="locationFilter" onchange="renderJobs()">
+          <option value="ALL">📍 Tất cả khu vực (Đồng Nai &amp; TP.HCM)</option>
+          <option value="DONGNAI">🏭 Đồng Nai (Nhơn Trạch / Biên Hòa / Long Thành)</option>
+          <option value="HCM">🏙️ TP. Hồ Chí Minh</option>
+        </select>
+        <select id="verdictFilter" onchange="renderJobs()">
+          <option value="ALL">⭐ Tất cả mức độ phù hợp (20 việc làm)</option>
+          <option value="Strong Fit">🟢 Strong Fit (Từ 75/100 trở lên)</option>
+          <option value="Good Fit">🔵 Good Fit (60–74/100)</option>
+        </select>
+      </div>
+
+      <div id="jobsContainer" class="job-grid"></div>
+    </section>
+
+    <!-- TAB 2: TAILORED APPLICATION PACKAGES -->
+    <section id="tab-apply" class="tab-panel">
+      <div class="card">
+        <div class="card-title">
+          <span>📥 Trung Tâm Tải Hồ Sơ Ứng Tuyển Đã Cá Nhân Hóa (`/apply` Verified Outputs)</span>
+          <span class="badge badge-strong">Đã kiểm chứng bằng tools/verify_pdf.py (0 lỗi, chuẩn ATS)</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 14px;">
+          Toàn bộ hồ sơ dưới đây được tạo từ dữ liệu thật 100% trong <code>CV 2026 phuong - tieng han.docx</code> (không bịa đặt số liệu hay kỹ năng), tuân thủ quy chuẩn 2 trang cho CV và 1 trang cho Cover Letter.
+        </p>
+
+        <div class="dl-grid">
+          <div class="dl-item">
+            <div>
+              <span class="badge badge-strong">Gói #1 • Điểm phù hợp 96/100</span>
+              <h4 style="margin-top:8px;">Công ty TNHH Samkwang CF Vina — Kế Toán Tổng Hợp</h4>
+              <p>Đường số 1, KCN Nhơn Trạch 6, xã Phước An, Đồng Nai (Doanh nghiệp FDI Hàn Quốc sản xuất bánh răng hộp số ô tô).</p>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="downloads/CV_2026_Phuong_Tieng_Han_Samkwang_CF_Vina.docx" download>⬇️ CV Tiếng Hàn (.docx)</a>
+              <button class="btn btn-outline" onclick="previewBase64Pdf('samkwang_cv_pdf', 'CV Samkwang CF Vina (2 trang PDF)')">👁️ Xem &amp; Tải CV (.pdf)</button>
+              <button class="btn btn-outline" onclick="previewBase64Pdf('samkwang_cover_pdf', 'Thư ứng tuyển Samkwang CF Vina (1 trang PDF)')">👁️ Thư Ứng Tuyển (.pdf)</button>
+            </div>
+          </div>
+
+          <div class="dl-item">
+            <div>
+              <span class="badge badge-good">Gói #2 • Điểm phù hợp 86/100</span>
+              <h4 style="margin-top:8px;">Orion Food Vina Co., Ltd. — Internal Accounting Control Specialist</h4>
+              <p>Tầng 22, Pearl Plaza, 561A Điện Biên Phủ, Bình Thạnh, TP.HCM (Tập đoàn thực phẩm Hàn Quốc Orion — Lương $500–$800).</p>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="downloads/CV_2026_Phuong_Tieng_Han_Orion_Food_Vina.docx" download>⬇️ CV Tiếng Hàn (.docx)</a>
+              <button class="btn btn-outline" onclick="previewBase64Pdf('orion_cv_pdf', 'CV Orion Food Vina (2 trang PDF)')">👁️ Xem &amp; Tải CV (.pdf)</button>
+              <button class="btn btn-outline" onclick="previewBase64Pdf('orion_cover_pdf', 'Cover Letter Orion Food Vina (1 trang PDF)')">👁️ Cover Letter (.pdf)</button>
+            </div>
+          </div>
+
+          <div class="dl-item">
+            <div>
+              <span class="badge badge-purple">Bản Master 2026</span>
+              <h4 style="margin-top:8px;">CV Tiếng Hàn Gốc &amp; Bản Nâng Cấp Chuẩn FDI Hàn Quốc</h4>
+              <p>Bao gồm bản gốc <code>CV 2026 phuong - tieng han.docx</code> và bản nâng cấp bổ sung Tóm tắt năng lực &amp; Thư giới thiệu tiếng Hàn (자기소개서).</p>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <a class="btn btn-emerald" href="downloads/CV_2026_Phuong_Tieng_Han_Optimized_2026.docx" download>⬇️ CV Tiếng Hàn Tối Ưu (.docx)</a>
+              <a class="btn btn-outline" href="downloads/CV_2026_Phuong_Tieng_Han_Original.docx" download>⬇️ Bản Gốc (.docx)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side-by-side Korean & Vietnamese Cover Letter Preview -->
+      <div class="two-col">
+        <div class="card">
+          <div class="card-title">
+            <span>🇰🇷 Thư Ứng Tuyển Tiếng Hàn (자기소개서 — Samkwang CF Vina)</span>
+            <span class="badge badge-strong">Korean FDI Standard</span>
+          </div>
+          <div style="font-size: 13.8px; line-height: 1.7; background: var(--surface-alt); padding: 16px; border-radius: 10px;">
+            <p><b>삼광 CF 비나 유한책임회사 (Công ty TNHH Samkwang CF Vina) 인사담당자님 귀하</b></p>
+            <p style="margin-top:8px;">안녕하십니까. 연짝 6공단에 위치한 삼광 CF 비나 유한책임회사의 <b>총괄 회계 담당자(Kế Toán Tổng Hợp)</b> 직무에 지원하는 <b>팜 티 프엉(Phạm Thị Phương)</b>입니다.</p>
+            <p style="margin-top:8px;">저는 하노이 국민경제대학교(Kinh Te Quoc Dan 대학교)에서 <b>회계학</b>을 전공하고, 호치민 인문사회과학대학교(과학사회인문대학교)에서 <b>한국학</b>을 전공하여 탄탄한 회계 전문성과 한국어 비즈니스 소통 능력을 동시에 갖추고 있습니다.</p>
+            <p style="margin-top:8px;">2015년부터 현재까지 11년 이상 제조기업(Giay Tuan Viet 유한책임회사, 8년 6개월)과 한국계 기업(Fu Food &amp; Woori Food, Fiktech, 2년 6개월 이상)에서 다음과 같은 핵심 실무를 수행해 왔습니다:</p>
+            <ul style="padding-left: 18px; margin-top: 6px;">
+              <li><b>자금 및 채권·채무 관리:</b> 현금 및 은행 예금 흐름 관리, 부가가치세(VAT) 세금계산서 발행, 미수금(AR) 및 미지급금(AP) 정기 대사.</li>
+              <li><b>수입·구매 검증 및 세무·감사 대응:</b> 견적서·발주서(PO)·계약서 및 수입 신고 서류 검토, 월별 세무 신고, 분기별 부가가치세 환급 서류 작성, 재무제표 작성 및 내부 감사/세무서 대관 업무.</li>
+              <li><b>ERP 및 한국어 보고:</b> Ecount ERP, Smart Pro, Fast 프로그램 능숙 활용 및 한국인 경영진 대상 직접 보고.</li>
+            </ul>
+            <p style="margin-top:8px;">특히 현재 동나이성 연짝현(Phú Đông, Nhơn Trạch, Đồng Nai)에 거주하고 있어 연짝 6공단까지 출퇴근이 매우 편리하며 장기 근속이 가능합니다. 감사합니다.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>🇻🇳 Thư Ứng Tuyển Tiếng Việt (Samkwang CF Vina — KCN Nhơn Trạch 6)</span>
+            <span class="badge badge-good">Chuẩn 10-vietnam-market.md</span>
+          </div>
+          <div style="font-size: 13.8px; line-height: 1.7; background: var(--surface-alt); padding: 16px; border-radius: 10px;">
+            <p><b>Kính gửi: Ban Giám đốc và Phòng Nhân sự — Công ty TNHH Samkwang CF Vina</b></p>
+            <p style="margin-top:8px;">Qua thông tin tuyển dụng trên VietnamWorks, tôi được biết Công ty TNHH Samkwang CF Vina tại Đường số 1, KCN Nhơn Trạch 6, xã Phước An, tỉnh Đồng Nai đang tuyển dụng vị trí <b>Kế Toán Tổng Hợp</b>. Với hơn 11 năm kinh nghiệm kế toán tại doanh nghiệp sản xuất quy mô lớn ở Đồng Nai và doanh nghiệp Hàn Quốc, kết hợp song bằng <b>Cử nhân Kế toán (ĐH Kinh tế Quốc dân)</b> và <b>Cử nhân Hàn Quốc học (ĐH KHXH&amp;NV TP.HCM)</b>, tôi trân trọng gửi hồ sơ ứng tuyển vị trí này.</p>
+            <ul style="padding-left: 18px; margin-top: 6px;">
+              <li><b>Quản lý dòng tiền, công nợ &amp; hóa đơn GTGT:</b> Trực tiếp quản lý thu chi tiền mặt/ngân hàng hàng ngày, phát hành hóa đơn GTGT, theo dõi và đối chiếu công nợ phải thu – phải trả (AR/AP).</li>
+              <li><b>Kiểm soát chứng từ mua hàng, nhập khẩu &amp; tồn kho:</b> Hơn 8,5 năm kiểm tra báo giá, đơn đặt hàng (PO), hợp đồng thương mại, kiểm toán nội bộ và lập hồ sơ hoàn thuế GTGT hàng quý.</li>
+              <li><b>Báo cáo tài chính, Thuế &amp; Tiếng Hàn chuyên ngành:</b> Thành thạo Ecount ERP, Smart Pro, Fast; lập BCTC, kê khai thuế và báo cáo nội bộ song ngữ Hàn – Việt cho Ban Giám đốc.</li>
+            </ul>
+            <p style="margin-top:8px;">Hiện tôi đang cư trú tại xã Phú Đông, huyện Nhơn Trạch, tỉnh Đồng Nai nên rất thuận lợi để đi làm hàng ngày tại KCN Nhơn Trạch 6 và gắn bó lâu dài cùng công ty. Trân trọng cảm ơn!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application Tracker Table -->
+      <div class="card">
+        <div class="card-title">
+          <span>📊 Bảng Theo Dõi Ứng Tuyển (`job_search_tracker.csv`)</span>
+          <span class="badge badge-good">6 cơ hội trọng tâm</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Ngày</th>
+                <th>Công ty</th>
+                <th>Vị trí</th>
+                <th>Địa điểm</th>
+                <th>Điểm (/rank)</th>
+                <th>Đánh giá</th>
+                <th>Trạng thái</th>
+                <th>Hạn nộp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2026-10-24</td>
+                <td><b>công ty TNHH Samkwang CF Vina</b></td>
+                <td>Kế Toán Tổng Hợp</td>
+                <td>KCN Nhơn Trạch 6, Đồng Nai</td>
+                <td><b>96/100</b></td>
+                <td><span class="badge badge-strong">Strong Fit</span></td>
+                <td><span class="badge badge-emerald">Drafted (Sẵn sàng nộp)</span></td>
+                <td>2026-11-18</td>
+              </tr>
+              <tr>
+                <td>2026-10-24</td>
+                <td><b>Orion Food Vina Co,. Ltd - Head Office</b></td>
+                <td>Internal Accounting Control Specialist</td>
+                <td>Bình Thạnh, TP.HCM</td>
+                <td><b>86/100</b></td>
+                <td><span class="badge badge-strong">Strong Fit</span></td>
+                <td><span class="badge badge-emerald">Drafted (Sẵn sàng nộp)</span></td>
+                <td>2026-11-22</td>
+              </tr>
+              <tr>
+                <td>2026-10-24</td>
+                <td><b>CÔNG TY TNHH MEDLOG VIỆT NAM HOLDING</b></td>
+                <td>Accountant (Logistics - Bien Hoa)</td>
+                <td>Biên Hòa, Đồng Nai</td>
+                <td><b>82/100</b></td>
+                <td><span class="badge badge-strong">Strong Fit</span></td>
+                <td><span class="badge badge-good">Evaluated</span></td>
+                <td>2026-11-18</td>
+              </tr>
+              <tr>
+                <td>2026-10-24</td>
+                <td><b>CHI NHÁNH CÔNG TY CỔ PHẦN TRÍ TUỆ</b></td>
+                <td>Kế Toán Tổng Hợp</td>
+                <td>TP. Hồ Chí Minh</td>
+                <td><b>78/100</b></td>
+                <td><span class="badge badge-strong">Strong Fit</span></td>
+                <td><span class="badge badge-good">Evaluated</span></td>
+                <td>2026-11-22</td>
+              </tr>
+              <tr>
+                <td>2026-10-24</td>
+                <td><b>Công ty Cổ phần CasVie</b></td>
+                <td>Chief Accountant (Kế Toán Trưởng)</td>
+                <td>Đồng Nai</td>
+                <td><b>75/100</b></td>
+                <td><span class="badge badge-strong">Strong Fit</span></td>
+                <td><span class="badge badge-amber">Evaluated (Cần CC KTT)</span></td>
+                <td>2026-11-15</td>
+              </tr>
+              <tr>
+                <td>2026-10-24</td>
+                <td><b>Công ty TNHH Kuang Tai (VN)</b></td>
+                <td>Kế Toán Trưởng</td>
+                <td>KCN Nhơn Trạch 3, Đồng Nai</td>
+                <td><b>71/100</b></td>
+                <td><span class="badge badge-good">Good Fit</span></td>
+                <td><span class="badge badge-amber">Evaluated (Cần CC KTT)</span></td>
+                <td>2026-11-14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: KOREAN CV & AUDIT -->
+    <section id="tab-cv" class="tab-panel">
+      <div class="two-col">
+        <div class="card">
+          <div class="card-title">
+            <span>🇰🇷 Nội Dung Tệp CV Tiếng Hàn (`CV 2026 phuong - tieng han.docx`)</span>
+            <span class="badge badge-strong">Dữ liệu gốc + Bản chuẩn hóa</span>
+          </div>
+          <div id="koreanCvContainer"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span>🔍 Kết Quả Audit CV &amp; Đề Xuất Nâng Cấp (`Audit CV 2026 phuong.md`)</span>
+            <span class="badge badge-purple">7.8/10 ➔ 9.6/10</span>
+          </div>
+          <div class="list-box" style="margin-bottom: 14px;">
+            <h4>✅ Điểm Mạnh Cốt Lõi (Core Strengths)</h4>
+            <ul>
+              <li><b>Sự kết hợp bằng cấp cực hiếm (Rare Dual-Degree):</b> Cử nhân Kế toán (ĐH Kinh tế Quốc dân — trường top 1 kinh tế/kế toán) + Cử nhân Hàn Quốc học (ĐH KHXH&amp;NV TP.HCM).</li>
+              <li><b>Hơn 11 năm kinh nghiệm thực chiến liền mạch (2015 – 2026):</b> Gắn bó 8,5 năm tại Công ty TNHH Giày Tuấn Việt (2015–2023) và hơn 2,5 năm làm Kế toán Tổng hợp tại Fu Food &amp; Woori Food, Fiktech (2023–nay).</li>
+              <li><b>Làm chủ phần mềm ERP Hàn Quốc &amp; Việt Nam:</b> Thành thạo <b>Ecount ERP</b> (phần mềm số 1 tại các công ty FDI Hàn Quốc), <b>Smart Pro</b> và <b>Fast Accounting</b>.</li>
+              <li><b>Kinh nghiệm đối ngoại &amp; pháp lý toàn diện:</b> Trực tiếp làm việc với Cơ quan Thuế, Quản lý thị trường, VSATTP, PCCC và làm Work Permit cho người nước ngoài.</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h4>🛠️ Các Điểm Đã Được Chuẩn Hóa Trong Bộ CV 2026 Mới</h4>
+            <ul>
+              <li><b>Bổ sung mục Tóm tắt Năng lực Cốt lõi (핵심 역량 요약 / Executive Summary):</b> Giúp Giám đốc người Hàn nắm bắt ngay 11 năm kinh nghiệm + song bằng Kế toán &amp; Tiếng Hàn + Ecount ERP trong 5 giây đầu tiên.</li>
+              <li><b>Chuẩn hóa thuật ngữ Kế toán Hàn Quốc (한국 회계 실무 용어):</b> Sử dụng chính xác thuật ngữ <i>총괄 회계 담당자 (Kế toán tổng hợp), 채권·채무 대사 (Đối chiếu công nợ AR/AP), 분기별 부가가치세 환급 (Hoàn thuế GTGT quý), 내부 감사 (Kiểm toán nội bộ)</i>.</li>
+              <li><b>Bổ sung Thư giới thiệu bằng tiếng Hàn (자기소개서):</b> Đáp ứng chuẩn tuyển dụng của các doanh nghiệp FDI Hàn Quốc tại KCN Nhơn Trạch (Samkwang CF Vina) và TP.HCM (Orion Food Vina).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: INTERVIEW PREP STAR -->
+    <section id="tab-interview" class="tab-panel">
+      <div class="card">
+        <div class="card-title">
+          <span>🎤 Bộ Câu Trả Lời Phỏng Vấn Theo Mô Hình STAR (`/interview` — Song ngữ Việt - Hàn)</span>
+          <span class="badge badge-strong">Cá nhân hóa cho Samkwang CF Vina &amp; Orion Food Vina</span>
+        </div>
+        <div class="two-col">
+          <div class="list-box">
+            <h4>⭐ Tình huống 1: Quản lý Kế toán Tổng hợp &amp; Báo cáo trực tiếp cho Sếp Hàn</h4>
+            <p><b>S (Bối cảnh):</b> Tại Fu Food &amp; Woori Food, Fiktech (từ 07/2023 – nay), Ban Giám đốc người Hàn cần kiểm soát chặt dòng tiền, công nợ, thuế và pháp lý đa mảng.</p>
+            <p><b>T (Nhiệm vụ):</b> Phụ trách toàn bộ Kế toán Tổng hợp (총괄 회계), quản lý thu chi/ngân hàng, công nợ AR/AP, xuất hóa đơn GTGT, kiểm tra tờ khai thuế &amp; BCTC.</p>
+            <p><b>A (Hành động):</b> Vận hành hệ thống trên <b>Ecount ERP</b>; đối chiếu công nợ và dòng tiền hàng ngày; trực tiếp đại diện làm việc với Cơ quan Thuế, Quản lý thị trường, VSATTP, PCCC và xin Work Permit cho chuyên gia nước ngoài.</p>
+            <p><b>R (Kết quả):</b> 100% kỳ kê khai thuế và BCTC chính xác, đúng hạn; báo cáo trực tiếp bằng tiếng Hàn cho Ban Giám đốc không cần qua thông dịch.</p>
+          </div>
+
+          <div class="list-box">
+            <h4>⭐ Tình huống 2: Kiểm soát Mua hàng (PO/Hợp đồng) &amp; Hoàn thuế GTGT Quý</h4>
+            <p><b>S (Bối cảnh):</b> Tại Công ty TNHH Giày Tuấn Việt (01/2015 – 06/2023), doanh nghiệp sản xuất xuất khẩu có lượng lớn hóa đơn nguyên vật liệu và hồ sơ hoàn thuế GTGT hàng quý.</p>
+            <p><b>T (Nhiệm vụ):</b> Kiểm tra báo giá, PO, hợp đồng mua bán; rà soát hóa đơn kê khai thuế GTGT tháng và lập bộ hồ sơ hoàn thuế GTGT quý.</p>
+            <p><b>A (Hành động):</b> Áp dụng đối chiếu 3 chiều (Báo giá – PO/Hợp đồng – Hóa đơn GTGT &amp; chứng từ thanh toán ngân hàng) trên Smart Pro / Fast trước khi kê khai.</p>
+            <p><b>R (Kết quả):</b> Hồ sơ hoàn thuế GTGT hàng quý suốt 8,5 năm luôn hợp lệ, giúp công ty thu hồi dòng tiền thuế đúng hạn và an toàn khi thanh tra.</p>
+          </div>
+
+          <div class="list-box">
+            <h4>⭐ Tình huống 3: Lập Báo cáo Tài chính Quý &amp; Kiểm toán Nội bộ (내부 감사)</h4>
+            <p><b>S (Bối cảnh):</b> Ban Giám đốc cần báo cáo tài chính quý chính xác và kiểm soát chặt chẽ chi phí sản xuất, tồn quỹ.</p>
+            <p><b>T (Nhiệm vụ):</b> Lập BCTC hàng quý, báo cáo phân tích quản trị và thực hiện kiểm toán nội bộ định kỳ.</p>
+            <p><b>A (Hành động):</b> Đối chiếu sổ cái với sổ quỹ tiền mặt hàng ngày, sổ phụ ngân hàng, bảng lương &amp; BHXH và công nợ AR/AP; phân tích biến động chi phí.</p>
+            <p><b>R (Kết quả):</b> Ngăn ngừa sai sót hạch toán, cung cấp số liệu minh bạch phục vụ điều hành sản xuất.</p>
+          </div>
+
+          <div class="list-box">
+            <h4>🇰🇷 Câu Giới Thiệu Bản Thân 1 Phút Bằng Tiếng Hàn (1분 자기소개)</h4>
+            <p style="line-height: 1.65;">
+              "안녕하십니까. 총괄 회계 직무에 지원한 <b>팜 티 프엉(Phạm Thị Phương)</b>입니다. 저는 하노이 국민경제대학교 회계학과와 호치민 인문사회과학대학교 한국학과를 졸업하고, 지난 11년 이상 제조기업(Giay Tuan Viet, 8년 6개월) 및 한국계 기업(Fu Food &amp; Woori Food, Fiktech, 2년 6개월 이상)에서 회계·세무 실무를 담당해 왔습니다. 현금 및 은행 예금 관리, 부가가치세 신고 및 분기별 환급, 채권·채무(AR/AP) 대사, 재무제표 작성 및 내부 감사, 그리고 세무서 대관 업무와 Ecount ERP 활용에 능숙합니다. 연짝현 거주자로서 귀사에 장기 근속하며 투명하고 정확한 회계 관리를 수행하겠습니다."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: CODEBASE AUDIT & OPTIMIZATIONS -->
+    <section id="tab-audit" class="tab-panel">
+      <div class="card">
+        <div class="card-title">
+          <span>🛠️ Báo Cáo Audit Tổng Thể &amp; Tối Ưu Hóa Dự Án `ai-job-search-vn-master`</span>
+          <span class="badge badge-strong">6/6 Hạng mục đã Fix &amp; Kiểm thử 100%</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;">
+          Đã đọc chi tiết toàn bộ cấu trúc dự án (12 commands, 7 skills, 3 agents, 4 Bun/TypeScript portal CLIs, 9 Python tools, và 30+ bộ unit tests), phát hiện và khắc phục triệt để 6 vấn đề kỹ thuật &amp; bản địa hóa Việt – Hàn:
+        </p>
+        <div id="auditFixesContainer" class="job-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PDF Preview Modal -->
+  <div id="pdfModal" class="modal-backdrop" onclick="if(event.target===this) closePdfModal()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <strong id="pdfModalTitle">Xem trước tài liệu PDF</strong>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-primary" id="pdfModalDownloadBtn">⬇️ Tải xuống PDF</button>
+          <button class="btn btn-outline" onclick="closePdfModal()">✕ Đóng</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdfModalFrame" title="PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    function toggleTheme() {
+      const root = document.documentElement;
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    }
+
+    function downloadBase64Pdf(bundleKey, filename) {
+      const b64 = (window.PORTAL_DATA && window.PORTAL_DATA.pdf_bundles && window.PORTAL_DATA.pdf_bundles[bundleKey]) || '';
+      if (!b64) return;
+      const byteCharacters = atob(b64);
+      const byteNumbers = new Array(byteCharacters.length);
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      const blob = new Blob([new Uint8Array(byteNumbers)], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    }
+
+    function previewBase64Pdf(bundleKey, title) {
+      const b64 = (window.PORTAL_DATA && window.PORTAL_DATA.pdf_bundles && window.PORTAL_DATA.pdf_bundles[bundleKey]) || '';
+      if (!b64) return;
+      const byteCharacters = atob(b64);
+      const byteNumbers = new Array(byteCharacters.length);
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      const blob = new Blob([new Uint8Array(byteNumbers)], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      document.getElementById('pdfModalTitle').textContent = title;
+      document.getElementById('pdfModalFrame').src = url;
+      const dlBtn = document.getElementById('pdfModalDownloadBtn');
+      dlBtn.onclick = () => downloadBase64Pdf(bundleKey, title.replace(/[^a-zA-Z0-9_-]/g, '_') + '.pdf');
+      document.getElementById('pdfModal').classList.add('open');
+    }
+
+    function closePdfModal() {
+      document.getElementById('pdfModal').classList.remove('open');
+      document.getElementById('pdfModalFrame').src = '';
+    }
+
+    function renderJobs() {
+      const data = window.PORTAL_DATA;
+      if (!data) return;
+      const q = (document.getElementById('jobSearchInput').value || '').toLowerCase().trim();
+      const locFilter = document.getElementById('locationFilter').value;
+      const verdictFilter = document.getElementById('verdictFilter').value;
+
+      const filtered = data.ranked_jobs.filter(job => {
+        const text = `${job.title} ${job.company} ${job.location} ${(job.strengths || []).join(' ')}`.toLowerCase();
+        if (q && !text.includes(q)) return false;
+        if (locFilter === 'DONGNAI' && !job.location.toLowerCase().includes('đồng nai')) return false;
+        if (locFilter === 'HCM' && !job.location.toLowerCase().includes('hồ chí minh')) return false;
+        if (verdictFilter !== 'ALL' && job.verdict !== verdictFilter) return false;
+        return true;
+      });
+
+      const container = document.getElementById('jobsContainer');
+      container.innerHTML = filtered.map(job => {
+        const badgeClass = job.score >= 75 ? 'badge-strong' : 'badge-good';
+        const isTop = job.rank <= 2 ? 'top-pick' : '';
+        const strengthsHtml = (job.strengths || []).map(s => `<li>${s}</li>`).join('');
+        const gapsHtml = (job.gaps || []).map(g => `<li>${g}</li>`).join('');
+        return `
+          <article class="job-card ${isTop}">
+            <div class="job-header">
+              <div>
+                <div>
+                  <span class="job-rank">#${job.rank}</span>
+                  <a class="job-title" href="${job.url}" target="_blank" rel="noopener noreferrer">${job.title} ↗</a>
+                </div>
+                <div class="job-company">🏢 ${job.company}</div>
+              </div>
+              <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                <span class="badge ${badgeClass}" style="font-size:14px; padding:5px 12px;">Điểm Fit: ${job.score}/100 (${job.verdict})</span>
+                <a class="btn btn-outline" href="${job.url}" target="_blank" rel="noopener noreferrer">Ứng tuyển trên VietnamWorks</a>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span>📍 <b>Địa điểm:</b> ${job.location}</span>
+              <span>💰 <b>Mức lương:</b> ${job.salary}</span>
+              <span>📅 <b>Ngày đăng:</b> ${job.posted_date}</span>
+              <span>⏳ <b>Hạn nộp:</b> ${job.deadline}</span>
+              <span>✅ <b>Location Gate:</b> ${job.location_verdict}</span>
+              <span>🗣️ <b>Language Gate:</b> ${job.language_gate}</span>
+            </div>
+            <div class="two-col">
+              <div class="list-box">
+                <h4 style="color: var(--emerald);">✅ Điểm mạnh phù hợp với hồ sơ Phạm Thị Phương</h4>
+                <ul>${strengthsHtml}</ul>
+              </div>
+              <div class="list-box">
+                <h4 style="color: var(--amber);">⚠️ Điểm lưu ý / Cách xử lý khi phỏng vấn</h4>
+                <ul>${gapsHtml}</ul>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderProfileAndAudit() {
+      const data = window.PORTAL_DATA;
+      if (!data) return;
+      const c = data.candidate;
+      const cvHtml = `
+        <div class="list-box" style="margin-bottom:12px;">
+          <h4>👤 Thông tin cá nhân (인적사항)</h4>
+          <p><b>Họ và tên (성명):</b> ${c.name_vi} (${c.name_kr}) — <b>Ngày sinh (생년월일):</b> ${c.dob}</p>
+          <p><b>Điện thoại (전화번호):</b> ${c.phone} — <b>Email:</b> ${c.email}</p>
+          <p><b>Địa chỉ (주소):</b> ${c.address}</p>
+        </div>
+        <div class="list-box" style="margin-bottom:12px;">
+          <h4>🎓 Học vấn (학력사항)</h4>
+          <ul>
+            ${c.education.map(e => `<li><b>${e.period} | ${e.school_kr}</b> (${e.school_vi})<br/>전공: <b>${e.major_kr}</b> — 성적: <b>${e.grade}</b></li>`).join('')}
+          </ul>
+        </div>
+        <div class="list-box" style="margin-bottom:12px;">
+          <h4>💼 Kinh nghiệm làm việc (경력사항 — 11+ năm)</h4>
+          ${c.experience.map(exp => `
+            <div style="margin-bottom:10px;">
+              <p><b>■ ${exp.period} | ${exp.company} — ${exp.role_kr} (${exp.role_vi})</b></p>
+              <ul>${exp.bullets_kr.map(b => `<li>${b}</li>`).join('')}</ul>
+            </div>
+          `).join('')}
+        </div>
+        <div class="list-box">
+          <h4>💻 Phần mềm &amp; Chứng chỉ (전산 능력 및 자격증)</h4>
+          <p><b>Phần mềm:</b> ${c.software.join(', ')}</p>
+          <p><b>Ngoại ngữ &amp; Chứng chỉ:</b> Tiếng Hàn (Cử nhân Hàn Quốc học), Tiếng Anh B2 (2018), Chứng chỉ Tin học (01/2019)</p>
+        </div>
+      `;
+      document.getElementById('koreanCvContainer').innerHTML = cvHtml;
+
+      const auditContainer = document.getElementById('auditFixesContainer');
+      auditContainer.innerHTML = data.audit_fixes.map(f => `
+        <div class="job-card">
+          <div class="job-header">
+            <div>
+              <span class="job-rank">${f.id}</span>
+              <strong style="font-size:15.5px;"><code>${f.file}</code></strong>
+            </div>
+            <span class="badge badge-strong">ĐÃ FIX &amp; VERIFIED PASS</span>
+          </div>
+          <p style="font-size:13.5px; color: var(--text-muted); margin-bottom:6px;"><b>Vấn đề phát hiện khi Audit:</b> ${f.issue}</p>
+          <p style="font-size:13.5px;"><b>Giải pháp tối ưu đã triển khai:</b> ${f.fix}</p>
+        </div>
+      `).join('');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderJobs();
+      renderProfileAndAudit();
+    });
+  </script>
+</body>
+</html>

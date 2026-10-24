@@ -127,3 +127,5 @@ company_research/*.json
 !assets/suai/
 !assets/suai/*.png
 !assets/suai/*.jpg
+
+.vercel
