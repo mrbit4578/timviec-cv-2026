@@ -1,0 +1,241 @@
+{
+ "meta": {
+  "code": 200,
+  "message": "Success",
+  "nbHits": 61,
+  "page": 0,
+  "nbPages": 31,
+  "hitsPerPage": 2
+ },
+ "data": [
+  {
+   "jobId": 2121660,
+   "jobTitle": "AI Enablement/ Business Applications Engineer",
+   "jobUrl": "https://www.vietnamworks.com/ai-enablement-business-applications-engineer-1792554207863229253-2121660-jv",
+   "companyName": "CÔNG TY CỔ PHẦN DỊCH VỤ KỸ THUẬT LND",
+   "createdOn": "2026-10-21T09:50:37+07:00",
+   "approvedOn": "2026-10-21T10:43:27+07:00",
+   "expiredOn": "2026-11-20T23:59:59+07:00",
+   "prettySalary": "Thương lượng",
+   "salaryMin": 0,
+   "salaryMax": 0,
+   "salaryCurrency": "VND",
+   "jobLevel": "Experienced (non-manager)",
+   "jobLevelVI": "Nhân viên",
+   "workingLocations": [
+    {
+     "workingLocationId": 266422,
+     "addressId": 49571,
+     "cityId": 29,
+     "districtId": 0,
+     "address": "Ho Chi Minh City, Vietnam (On-Site)",
+     "cityName": "Ho Chi Minh",
+     "cityNameVI": "Hồ Chí Minh"
+    }
+   ],
+   "address": "778/11 Nguyễn Kiệm, phường Đức Nhuận, Tp HCM",
+   "yearsOfExperience": 3,
+   "industriesV3": [
+    {
+     "industryV3Id": 16,
+     "industryV3Name": "Electrical/Electronics",
+     "industryV3NameVI": "Điện/Điện tử"
+    }
+   ],
+   "skills": [
+    {
+     "skillId": 12799,
+     "skillWeight": 0,
+     "skillName": "Business Analysis"
+    },
+    {
+     "skillId": 890,
+     "skillWeight": 0,
+     "skillName": "Computer Science"
+    },
+    {
+     "skillId": 1014653,
+     "skillWeight": 0,
+     "skillName": "LLMs"
+    },
+    {
+     "skillId": 59227,
+     "skillWeight": 0,
+     "skillName": "Artificial Intelligence"
+    },
+    {
+     "skillId": 1124155,
+     "skillWeight": 0,
+     "skillName": "AI Solutions"
+    }
+   ],
+   "benefits": [
+    {
+     "benefitId": 1,
+     "benefitIconName": "fa-dollar",
+     "benefitName": "Bonus",
+     "benefitNameVI": "Thưởng",
+     "benefitValue": "Performance-based bonuses, with performance reviews conducted twice a year"
+    },
+    {
+     "benefitId": 2,
+     "benefitIconName": "fa-user-md",
+     "benefitName": "Healthcare Plan",
+     "benefitNameVI": "Chăm sóc sức khoẻ",
+     "benefitValue": "Annual Health Check"
+    },
+    {
+     "benefitId": 3,
+     "benefitIconName": "fa-file-image-o",
+     "benefitName": "Paid Leave",
+     "benefitNameVI": "Nghỉ phép có lương",
+     "benefitValue": "Annual leave and public holidays in accordance with applicable regulations"
+    },
+    {
+     "benefitId": 4,
+     "benefitIconName": "fa-graduation-cap",
+     "benefitName": "Training",
+     "benefitNameVI": "Đào tạo",
+     "benefitValue": "Training programs available both domestically and internationally"
+    },
+    {
+     "benefitId": 5,
+     "benefitIconName": "fa-trophy",
+     "benefitName": "Awards",
+     "benefitNameVI": "Giải thưởng",
+     "benefitValue": "Annual performance and achievement awards"
+    },
+    {
+     "benefitId": 7,
+     "benefitIconName": "fa-laptop",
+     "benefitName": "Laptop",
+     "benefitNameVI": "Máy tính xách tay",
+     "benefitValue": "Provide appropriate computers and working tools/equipment"
+    },
+    {
+     "benefitId": 9,
+     "benefitIconName": "fa-plane",
+     "benefitName": "Travel Opportunities",
+     "benefitNameVI": "Cơ hội du lịch",
+     "benefitValue": "Team Building of Compnay & Team Building of Each Team"
+    },
+    {
+     "benefitId": 10,
+     "benefitIconName": "fa-glass",
+     "benefitName": "Team Activities",
+     "benefitNameVI": "Hoạt động nhóm",
+     "benefitValue": "Entertaiment Buget for team"
+    },
+    {
+     "benefitId": 12,
+     "benefitIconName": "fa-coffee",
+     "benefitName": "Canteen",
+     "benefitNameVI": "Căn-tin",
+     "benefitValue": "Free access to the company canteen"
+    },
+    {
+     "benefitId": 15,
+     "benefitIconName": "fa-check-square-o",
+     "benefitName": "Others",
+     "benefitNameVI": "Khác",
+     "benefitValue": "Additional PVI Care Insurance \r\nGrab Business \r\nRetention Program for key Talent\r\nUniform (T-Shirt, Cup, Backpack, Handbook...) \r\nTea Break  everyday"
+    }
+   ],
+   "jobDescription": "<p><strong>Job Summary</strong></p><p>The AI Solutions Engineer is responsible for designing and delivering practical AI-enabled tools that directly support business operations. The role focuses on turning business requirements into usable AI solutions that automate workflows, reduce manual effort, and improve decision-making across engineering, estimating, and reporting functions. Success in this role is measured by working tools...",
+   "jobRequirement": "<p><strong>Qualifications and Skills</strong></p><p><strong>Required:</strong></p><p>• Bachelor’s degree in Engineering, Computer Science, Data Science, Information Systems, or related fields.</p><p>• Fluent English (minimum TOEIC score 700 or equivalent).</p><p>• 3+ years of experience applying AI, automation, or data‑driven solutions to real‑world business problems.</p><p>• Strong understanding of applied AI concepts, including:</p><p>✓ Large Language Models (LLMs)</p><p>✓ Prompt engineering</p><p>✓ Information extraction and...",
+   "companyProfile": "LND Technical Services (LNDTS) là công ty kỹ thuật toàn cầu có trụ sở chính tại Houston (Mỹ) và văn phòng kỹ thuật tại TP.HCM.\r\nCông ty chuyên cung cấp dịch vụ:\r\nNghiên cứu và phân tích hệ thống điện (Power System Studies)\r\nBảo vệ và Điều khiển (Protection & Control)\r\nKiểm tra, chạy thử và bảo trì (Testing & Commissioning, Maintenance)\r\nDịch vụ hiện trường (Field Services)",
+   "isActive": true
+  },
+  {
+   "jobId": 2121404,
+   "jobTitle": "Chuyên viên cao cấp Phân Tích Dữ Liệu Thẻ Và Cho Vay Không Có TSBĐ",
+   "jobUrl": "https://www.vietnamworks.com/chuyen-vien-cao-cap-phan-tich-du-lieu-the-va-cho-vay-khong-co-tsbd-1792480915140716834-2121404-jv",
+   "companyName": "Ngân Hàng TMCP Quốc Tế Việt Nam (VIB)",
+   "createdOn": "2026-10-20T14:21:43+07:00",
+   "approvedOn": "2026-10-20T14:21:55+07:00",
+   "expiredOn": "2026-11-19T23:59:59+07:00",
+   "prettySalary": "Thương lượng",
+   "salaryMin": 0,
+   "salaryMax": 0,
+   "salaryCurrency": "USD",
+   "jobLevel": "Experienced (non-manager)",
+   "jobLevelVI": "Nhân viên",
+   "workingLocations": [
+    {
+     "workingLocationId": 270866,
+     "addressId": 96410,
+     "cityId": 29,
+     "districtId": 0,
+     "address": "Ho Chi Minh",
+     "cityName": "Ho Chi Minh",
+     "cityNameVI": "Hồ Chí Minh"
+    }
+   ],
+   "address": "Tầng 1 (Tầng trệt) và Tầng 2 Tòa nhà Sailing Tower, Số 111A Pasteur, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh, Việt Nam",
+   "yearsOfExperience": 2,
+   "industriesV3": [
+    {
+     "industryV3Id": 9,
+     "industryV3Name": "Banking",
+     "industryV3NameVI": "Ngân hàng"
+    }
+   ],
+   "skills": [
+    {
+     "skillId": 1682893,
+     "skillWeight": 100,
+     "skillName": "Sql Và Python"
+    },
+    {
+     "skillId": 160032,
+     "skillWeight": 100,
+     "skillName": "Phân Tích Chiến Lược"
+    },
+    {
+     "skillId": 1021344,
+     "skillWeight": 100,
+     "skillName": "Data analysis"
+    },
+    {
+     "skillId": 75061,
+     "skillWeight": 100,
+     "skillName": "Portfolio Management"
+    }
+   ],
+   "benefits": [
+    {
+     "benefitId": 1,
+     "benefitIconName": "fa-dollar",
+     "benefitName": "Bonus",
+     "benefitNameVI": "Thưởng",
+     "benefitValue": "<p>Chế độ thưởng theo chính sách Ngân hàng</p>"
+    },
+    {
+     "benefitId": 2,
+     "benefitIconName": "fa-user-md",
+     "benefitName": "Healthcare Plan",
+     "benefitNameVI": "Chăm sóc sức khoẻ",
+     "benefitValue": "<p>Bảo hiểm CBNV, BHXH, BHYT</p>"
+    },
+    {
+     "benefitId": 3,
+     "benefitIconName": "fa-file-image-o",
+     "benefitName": "Paid Leave",
+     "benefitNameVI": "Nghỉ phép có lương",
+     "benefitValue": "<p>15 ngày nghỉ phép/năm</p>"
+    },
+    {
+     "benefitId": 9,
+     "benefitIconName": "fa-plane",
+     "benefitName": "Travel Opportunities",
+     "benefitNameVI": "Cơ hội du lịch",
+     "benefitValue": "<p>Teambuilding, du lịch trong &amp; ngoài nước</p>"
+    }
+   ],
+   "jobDescription": "<p><strong>Trách nhiệm</strong>:Chịu trách nhiệm (i) phân tích danh mục; (ii)xây dựng các báo cáo liên quan đến sản phẩm Thẻ và cho vay không có TSBĐ, từ đó đề xuất cải tiến sản phẩm, quy trình dựa trên số liệu giúp nâng cao hiệu quả hoạt động kinh doanh của Khối.</p><p><strong>1.  Quản lý &amp; Tối...",
+   "jobRequirement": "<p>•  Trình độ Đại học trở lên chuyên ngành Tài chính - Ngân hàng, Quản trị kinh doanh, Công nghệ thông tin, Toán thống kê, Kinh tế lượng, Phân tích dữ liệu hoặc ngành liên quan.</p><p>•  Tối thiểu 5 năm(Giám đốc/Giám đốc nghiệp vụ)/3 năm(Chuyên gia/Chuyên viên cao cấp)/2 năm(Chuyên viên chính)/1 năm(Chuyên viên) kinh nghiệm...",
+   "companyProfile": "Ngân hàng Thương mại cổ phần (TMCP) Quốc Tế Việt Nam, tên viết tắt Ngân hàng Quốc Tế (VIB), là một trong những ngân hàng TMCP tư nhân hàng đầu tại Việt Nam.\r\nThành lập ngày 18/09/1996, VIB đi vào hoạt động với số vốn điều lệ ban đầu là 50 tỷ đồng và 23 cán bộ nhân viên.\r\n\r\nTrải qua gần 30 năm xây dựng và phát triển, VIB đã khẳng định vị thế là một trong những ngân hàng bán lẻ hàng đầu Việt Nam với tỷ lệ bán lẻ và hiệu quả sinh lời cao, thị phần top đầu ở các mảng kinh doanh trọng yếu. Tính đến ngày 31/12/2025, vốn điều lệ VIB đạt 34.040 tỷ đồng, vốn chủ sở hữu đạt hơn 46.900 tỷ đồng và tổng tài sản vượt mốc 556.000 tỷ đồng – minh chứng cho chiến lược tăng trưởng bền vững và năng lực quản trị vượt trội của Ngân hàng. \r\n VIB hiện có hơn 10.000 cán bộ nhân viên tại hơn 200 chi nhánh và phòng giao dịch trên toàn quốc.\r\n\r\nTẦM NHÌN VÀ SỨ MỆNH\r\nTrở thành ngân hàng sáng tạo và hướng tới khách hàng nhất tại Việt Nam.\r\nĐối với khách hàng: Vượt trội trong việc cung cấp các giải pháp sáng tạo nhằm thỏa mãn tối đa nhu cầu khách hàng.\r\nĐối với nhân viên: Xây dựng văn hóa hiệu quả, tinh thần doanh nhân và môi trường làm việc hiệu quả.\r\nĐối với cổ đông: Mang lại các giá trị hấp dẫn và bền vững cho cổ đông.\r\nĐối với cộng đồng: Tích cực đóng góp vào sự phát triển cộng đồng…\r\n\r\nGIÁ TRỊ CỐT LỖI\r\nHướng tới khách hàng\r\nNỗ lực vượt trội\r\nTrung thực\r\nTinh thần đồng đội\r\nTuân thủ kỷ luật\r\n\r\nCHƯƠNG TRÌNH NỔI BẬT\r\nTại VIB, phát triển con người là ưu tiên chiến lược. Ngân hàng đầu tư bài bản vào hệ thống đào tạo đa tầng – từ chương trình hội nhập cho nhân viên mới, các khóa chuyên môn nghiệp vụ, đến lộ trình phát triển dành cho quản lý cấp trung và cấp cao. Nổi bật trong đó là Chương trình Phát triển Quản lý Tiềm năng (MDP – Management Development Program) – lộ trình đào tạo trọng điểm dành riêng cho những cá nhân xuất sắc, được định hướng trở thành lãnh đạo tương lai của Ngân hàng.\r\nLà chương trình thường niên và kéo dài trong 12 tháng, MDP trang bị toàn diện năng lực chuyên môn, tư duy quản trị và kỹ năng lãnh đạo thực tiễn. Điểm khác biệt của chương trình nằm ở phương pháp học đi đôi với hành: học viên không chỉ tiếp thu lý thuyết mà còn được thực hành trực tiếp thông qua các buổi Group Coaching do Giám đốc Vùng (RGM) dẫn dắt. Song song đó, mỗi học viên tự xây dựng Dự án Phát triển Năng lực Cá nhân (PCP) – một kế hoạch hành động riêng với mục tiêu cụ thể trong 6 tháng, được các quản lý cấp cao trực tiếp tư vấn và góp ý. Thông qua hoạt động Coaching, học viên chuyển hóa kiến thức thành hành động, rèn luyện tư duy chiến lược và khả năng giải quyết vấn đề trong môi trường thực tế. Đây cũng là nơi nuôi dưỡng tinh thần kiên trì, cầu tiến, dám đổi mới và tạo khác biệt – những phẩm chất cốt lõi của nhà lãnh đạo tương lai.\r\n\r\nTháng 01/2025, 71 học viên từ Khối Ngân hàng Bán lẻ và Khách hàng Doanh nghiệp đã chính thức tốt nghiệp MDP khóa …, đánh dấu sự trưởng thành sau một hành trình nỗ lực không ngừng. Trong đó, ...% học viên đã được đề bạt vào vị trí quản lý ngay sau tốt nghiệp – minh chứng rõ nét cho hiệu quả của chương trình. MDP không chỉ là khóa đào tạo, mà còn là cam kết của VIB trong việc kiến tạo thế hệ lãnh đạo kế cận, sẵn sàng dẫn dắt Ngân hàng trong giai đoạn phát triển mới.",
+   "isActive": true
+  }
+ ]
+}

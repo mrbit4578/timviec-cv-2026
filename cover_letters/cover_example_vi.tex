@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thư xin việc (tiếng Việt) - [Công ty], [Vị trí]
+%
+% Mẫu thư xin việc tiếng Việt với nội dung giữ chỗ. Đây là mẫu cấu trúc cho
+% /apply khi tin tuyển dụng viết bằng tiếng Việt (xem 06-cover-letter-templates.md
+% và 10-vietnam-market.md). Biên dịch bằng xelatex, phải ra đúng 1 trang.
+% Dùng cover_vi.cls (font Be Vietnam Pro) - cover.cls gốc dùng Lato/Raleway
+% không có dấu tiếng Việt.
+% Danh sách gạch đầu dòng đặt NGOÀI \lettercontent{} và bọc trong
+% BeVietnamPro-Regular để font của bullet khớp với thân thư.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cover_vi}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Trang \thepage \hspace{0pt}}
+\thispagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HỌ TÊN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{\Huge{[YOUR NAME]}}{  \href{mailto:your.email@example.com}{your.email@example.com} | [+84 XXX XXX XXX] |  \urlstyle{same}\href{https://www.linkedin.com/in/yourprofile}{LinkedIn}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     NỘI DUNG THƯ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\currentdate{[Thành phố], ngày [dd] tháng [mm] năm [yyyy]}
+\lettercontent{Kính gửi: [Anh/Chị Tên người tuyển dụng / Phòng Nhân sự] - [Tên công ty],}
+
+\lettercontent{[Mở đầu: nêu vị trí ứng tuyển và nơi thấy tin tuyển dụng, một câu nói rõ điểm phù hợp mạnh nhất, rồi tóm tắt lý do anh/chị phù hợp. 2-3 câu.]}
+
+\lettercontent{[Thân thư: kinh nghiệm liên quan nhất, trình bày theo đúng các đầu việc trong tin tuyển dụng. Sau đó là 3-5 gạch đầu dòng cụ thể:]}
+
+{\raggedright\fontspec[Path = OpenFonts/fonts/bevietnampro/]{BeVietnamPro-Regular}\fontsize{11pt}{13pt}\selectfont
+\begin{itemize}
+    \item \textbf{[Thành tích 1]:} [kết quả cụ thể, có con số nếu được]
+    \item \textbf{[Thành tích 2]:} [kỹ năng hoặc dự án khớp với một yêu cầu của tin]
+    \item \textbf{[Thành tích 3]:} [bằng chứng cho một yêu cầu "ưu tiên"]
+\end{itemize}\par}
+\vspace{6pt}
+
+\lettercontent{[Vì sao chọn công ty này: nêu một điều cụ thể đã kiểm chứng - sản phẩm, định hướng, đội ngũ. Không viết chung chung.]}
+
+\lettercontent{[Phù hợp về con người: điểm mạnh trong cách làm việc và đóng góp cho đội, 2-3 câu.]}
+
+\lettercontent{Tôi rất mong có cơ hội được trao đổi trực tiếp với Anh/Chị. Xin chân thành cảm ơn Anh/Chị đã dành thời gian xem xét hồ sơ.}
+
+\begin{flushright}
+% Không thêm \\ ở cuối \closing{} - cover_vi.cls đã tự thêm, thêm nữa sẽ lỗi
+% "There's no line here to end."
+\closing{Trân trọng,}
+
+\signature{[YOUR NAME]}
+\end{flushright}
+\end{document}

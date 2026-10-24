@@ -1,0 +1,172 @@
+%% Example CV - Pham Thi Phuong (팜 티 프엉)
+%% Comprehensive overview of all competencies, experience, and achievements.
+%% Use as a master reference when tailoring role-specific CVs.
+%%
+%% SETUP: Run /setup to populate this with your actual information.
+%% Compile with: lualatex main_example.tex
+%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+% Force the name and section headings to render in moderncv blue (color1).
+% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
+% copies (not aliases) the pre-scheme accent colour, so the name colours are
+% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
+% every name-style macro routes through, so this also works on moderncv 2.3.1
+% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
+\renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
+\colorlet{firstnamecolor}{color1}
+\colorlet{lastnamecolor}{color1}
+\colorlet{namecolor}{color1}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+% pdflatex fallback only (the documented engine is lualatex, which skips this
+% branch). Without T1 font encoding pdflatex builds accented letters with
+% \accent, and the PDF text layer stores them decomposed - `e` + U+0300 rather
+% than U+00E8 - so an ATS keyword match on "Genève" fails while the page looks
+% right. moderncv 2.5 loads T1 itself under pdflatex; 2.3.1 (Debian/Ubuntu apt)
+% does not. \ifpdftex comes from iftex, which every moderncv version loads.
+\ifpdftex\usepackage[T1]{fontenc}\fi
+% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
+% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
+% \usepackage{hyperref} clashes with the class's own
+% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
+% through \PassOptionsToPackage instead, which is what removes that clash.
+\AtEndPreamble{\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Phạm Thị Phương - CV},
+    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
+    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
+    % value here would win and open every CV in fullscreen presentation mode.
+    pdfpagemode=UseNone,
+}}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{Phạm Thị}{Phương}
+% If you have no address to list, DELETE this whole line. \address{}{}{} fails
+% with "There's no line here to end" on every moderncv version.
+\address{Phú Đông, Nhơn Trạch, Đồng Nai, Vietnam}{}{}
+\phone[mobile]{0963 569 816}
+\email{Phamphuong121290@gmail.com}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{General Accountant and Internal Accounting Control Specialist with over 11 years of experience in financial accounting, VAT/PIT/CIT tax declaration, quarterly VAT refund dossiers, financial statement preparation, and internal auditing across manufacturing and Korean FDI enterprises. Dual Bachelor's graduate in Accounting (National Economics University) and Korean Studies (USSH -- VNU-HCM), proficient in Korean business communication, Ecount ERP, Smart Pro, and Fast Accounting.}
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{General Accounting \& Financial Reporting}: Full-cycle general ledger management, quarterly and annual financial statements, cash flow management, and internal audit \& analysis reports.
+
+\item \textbf{Taxation \& Regulatory Compliance}: Monthly VAT and PIT filings, quarterly VAT refund dossiers, corporate tax reconciliation, and direct liaison with Tax Authorities, Market Management, Food Safety, and Fire Safety agencies.
+
+\item \textbf{Accounts Receivable, Payable \& Cost Control}: 3-way matching of quotations, purchase orders (PO), contracts, and VAT invoices; AR/AP aging analysis and daily cash/bank balance reporting.
+
+\item \textbf{Payroll, Social Insurance \& Expat Administration}: Monthly payroll calculation, compulsory social insurance (SI/HI/UI) declarations, recruitment \& HR administration, and Work Permit processing for foreign experts.
+
+\item \textbf{Accounting ERP \& Bilingual Communication}: Ecount ERP, Smart Pro, Fast Accounting, Advanced Excel; professional working proficiency in Korean (BA in Korean Studies) and English (B2).
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+% --- Most Recent Role ---
+\item{\cventry{07/2023-Present}{General Accountant (총괄 회계 담당자)}{Fu Food \& Woori Food, Fiktech}{Ho Chi Minh City / Dong Nai, Vietnam}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Manage daily cash and bank deposit operations, issue VAT invoices, and track accounts receivable and payable (AR/AP) across Korean food and technical operations.}
+    \item {Review tax returns and prepare financial statements, ensuring full compliance with Vietnamese Accounting Standards (VAS) and tax regulations.}
+    \item {Serve as primary representative working directly with Tax Authorities, Market Management, Food Safety (VSATTP), and Fire Prevention (PCCC) inspection teams.}
+    \item {Oversee monthly payroll calculation, Social Insurance administration, recruitment \& HR operations, and Work Permit applications for foreign employees.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Previous Role ---
+\item{\cventry{01/2015-06/2023}{Accountant (회계원)}{Giay Tuan Viet Co., Ltd. (Công ty TNHH Giày Tuấn Việt)}{Dong Nai, Vietnam}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Verified supplier quotations, purchase orders (PO), and commercial contracts; audited incoming/outgoing invoices for monthly VAT declarations and prepared quarterly VAT refund dossiers.}
+    \item {Prepared and submitted quarterly financial statements, management analysis reports, and conducted periodic internal audits across production and purchasing cycles.}
+    \item {Managed cash funds and submitted daily cash collection/disbursement reports to Executive Management; monitored AR/AP ledgers and supplier settlements.}
+    \item {Prepared monthly payroll and Social Insurance declarations, and calculated and filed Personal Income Tax (PIT) returns.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2016-2018}{Bachelor of Arts in Korean Studies (한국학과)}{University of Social Sciences and Humanities -- VNU-HCM}{Ho Chi Minh City, Vietnam}{}{\vspace{1pt}
+Classification: Good (Khá). Focus on Korean language, business translation, and Korean enterprise culture.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2011-2013}{Bachelor of Accounting (회계학과)}{National Economics University (ĐH Kinh tế Quốc dân)}{Hanoi, Vietnam}{}{\vspace{1pt}
+Classification: Good (Khá). Focus on corporate financial accounting, taxation, and internal auditing.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item {Vietnamese (native), Korean (professional working proficiency -- BA in Korean Studies), English (B2 Certificate, 2018).}
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Applied Informatics Certificate (Chứng chỉ Tin học)} -- Completed 01/2019.}
+\item{\textbf{English Proficiency Certificate Level B2} -- Completed 2018.}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}
